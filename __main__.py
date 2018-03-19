@@ -1,11 +1,13 @@
 import requests
 import pandas as pd
+import sys
 
 
 from time import sleep
-tokenfile=open(file='token',mode='r')
-mytoken = tokenfile.read()
-tokenfile.close()
+#tokenfile=open(file='token',mode='r')
+#mytoken = tokenfile.read()
+#tokenfile.close()
+mytoken = sys.argv[1]
 
 class BotHandler:
 
