@@ -55,7 +55,7 @@ def main():
         last_chat_id = all_msgs[-1]['message']['chat']['id']
         print(last_msg_id,last_msg_id_known,last_msg,last_chat_id)
         if last_msg_id != last_msg_id_known:
-            if last_msg =='weather' and last_chat_id == mychatid:
+            if last_msg =='weather':
                 bot.send_message(text="Погода на сегодня : "+str(get_weather()), chat_id=last_chat_id)
             last_msg_id_known=last_msg_id
         sleep(10)
