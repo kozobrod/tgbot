@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#tokens
+tg_token
+ya_token
